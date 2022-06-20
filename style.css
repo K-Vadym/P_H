@@ -17,7 +17,6 @@ h1, h2, h3, h4, h5, h6{
 
 p{
     line-height: 1,6em;
-    width: auto;
 }
 
 .container{
@@ -88,7 +87,7 @@ p{
     justify-content: space-between;
     margin-top: 70px;
 
-    width: 289px;
+    width: auto;
  }
 
  .skill{
@@ -166,6 +165,9 @@ p{
 @media screen and (max-width: 1200px) {
    .container{
       width: 960px;
+   }
+   .intro{
+      width: auto;
    }
    
 }
