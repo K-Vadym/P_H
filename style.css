@@ -34,10 +34,11 @@ p{
 .wrapper{
     display: flex;
     justify-content: space-between;
+
+    align-items: center;
 }
 
 .offer{
-    margin-top: 147px;
     width: 555px;
 }
  .title{
@@ -46,6 +47,8 @@ p{
 
  .intro{
     margin-bottom: 43px;
+
+    width: 397px;
  }
 
  .btn{
@@ -83,12 +86,15 @@ p{
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
+
+    width: 289px;
  }
 
  .skill{
     width: 350px; 
    background:  no-repeat top  url('./img/kartinka-1.jpg');
-   padding-left: 70px;
+
+   text-align: center;
    padding-top: 70px;
  }
 
@@ -100,13 +106,10 @@ p{
 
  .skill-text{
     margin-top: 7px;
-    width: 340px; 
+    width: 330px; 
  }
 
- .skill-text_{
-   margin-top: 7px;
-   padding-left: 50px;
- }
+
 
  .skill-travel{
    background:  no-repeat top  url('./img/kartinka-2.jpg');
@@ -124,6 +127,9 @@ p{
 
  .form{
    margin-top: 56px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
  }
 
  .input{
@@ -132,12 +138,11 @@ p{
    font-family: 'Open Sans', sans-serif;
    height: 40px;
    padding-left: 20px;
-   margin: 0  410px 0 ;
+   /* margin: 0  410px 0 ; */
    margin-top: 12px; 
  }
 
  .btn-type{
-   margin: 0  410px 0 ;
    width: 320px;
    border: 1px solid #c0c8c8 ;
    font-family: 'Open Sans', sans-serif;
@@ -150,13 +155,68 @@ p{
 
  .footer{
    background: rgba(22, 77, 122, 1);
-   padding-top: 145px;
    color: #fff;
    padding: 33px;
-   padding-left: 470px;
+   text-align: center;
  }
 
-/*  p{
-   width: 320px;
- } */
+
+
+@media screen and (max-width: 1200px) {
+   .container{
+      width: 960px;
+   }
+   
+}
+
+@media screen and (max-width: 992px) {
+   .container{
+      width: 720px;
+   }
+   .wrapper{
+      flex-direction: column;
+   }
+
+   .offer{
+      width: 100%;
+   }
+   .intro{
+      width: auto;
+   }
+   .logo_two{
+      display: block;
+      width: 549px;
+      margin: 72px auto 0;
+   }
+   .skills{
+      flex-direction: column;
+   }
+   .skills{
+      width: auto;
+      margin-bottom: 30px;
+      align-items: center;
+   }
+
+}
+
+@media screen and (max-width: 768px) {
+   .container{
+      width: 540px;
+   }
+   .logo_two{
+      width: 100%;
+   }
+   .input{
+      width: 100%;
+   }
+   .btn-type{
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .container{
+      width: 90%;
+   }
+}
  
